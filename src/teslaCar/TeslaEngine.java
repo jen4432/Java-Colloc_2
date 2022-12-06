@@ -8,7 +8,7 @@ public class TeslaEngine implements Engine {
 
     private int power;
 
-    private TeslaEngine(int otherPower,boolean broken){
+    public TeslaEngine(int otherPower,boolean broken){
         power = otherPower;
         this.broken = broken;
     }
@@ -20,6 +20,12 @@ public class TeslaEngine implements Engine {
 
     @Override
     public String showStats() {
+        System.out.println("[ TeslaEngine : Power = " + Integer.toString(power) + "]");
         return "[ TeslaEngine : Power = " + Integer.toString(power) + "]";
+    }
+
+    @Override
+    public void fixTheEngine() {
+        broken = false;
     }
 }

@@ -21,6 +21,12 @@ public class TeslaMachineFrame implements MachineFrame {
 
     @Override
     public String showStats() {
+        System.out.println("[TeslaMachineFrame : passengerCar = " + passengerCar + "]");
         return "[TeslaMachineFrame : passengerCar = " + passengerCar + "]";
+    }
+
+    @Override
+    public void fixTheMachineFrame() {
+        broken = false;
     }
 }

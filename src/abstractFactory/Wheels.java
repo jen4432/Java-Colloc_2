@@ -6,4 +6,6 @@ public interface Wheels {
 
     public String showStats();
 
+    public void fixTheWheels();
+
 }

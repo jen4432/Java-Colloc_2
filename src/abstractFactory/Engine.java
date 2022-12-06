@@ -6,4 +6,6 @@ public interface Engine {
 
     public String showStats();
 
+    public void fixTheEngine();
+
 }

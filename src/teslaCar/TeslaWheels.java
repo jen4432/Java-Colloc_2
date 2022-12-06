@@ -24,6 +24,12 @@ public class TeslaWheels implements Wheels {
 
     @Override
     public String showStats() {
+        System.out.println("[Wheels: season = " + season + "]");
         return "[Wheels: season = " + season + "]";
+    }
+
+    @Override
+    public void fixTheWheels() {
+        broken = false;
     }
 }
